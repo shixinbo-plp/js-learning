@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function MinNumber(a, b) {
+            var min = Math.min(a, b);
+            var max = Math.max(a, b);
+            var nub = max*min;
+            if (max % min === 0) {
+                nub = max;
+            } else {
+                var max2 = max;
+                for (; max2 < max*min; max2++) {
+                    if ((max2 % max === 0) && (max2 % min === 0)) {
+                        nub = max2
+                        break;
+                    }
+                }
+            }
+            console.log(min, max, nub);
+            return nub;
+
+        }
+        var result = MinNumber(7, 6);
+        console.log(result)
+    </script>
+</body>
+
+</html>
