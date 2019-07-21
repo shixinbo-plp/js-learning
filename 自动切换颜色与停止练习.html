@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button>开始切换颜色</button>
+    <button>停止</button>
+        <div id="box"></div>
+    <script>
+        (function () {
+            var colors = ["red","blue","yellow","green","purple"] ;
+            var btn = document.querySelectorAll("button");//获取"button"元素且命名为btn
+            var box = document.querySelector("#box");//获取"box"元素且命名为box
+            var now = 0 ;//初始颜色
+            var timer = 0 ;//设置编号，为函数的返回值， 
+            btn[0].onclick = function () {     //点击第一个buttom后函数
+                clearInterval(timer);//可以在每次开启新的定时器时，先把旧定时器关闭
+                timer = setInterval (function(){    //间隔定时器，间隔为1000
+                    now++;                     //颜色++
+                    box.style.background = colors[now%colors.length];//修改box颜色且取模，使其能够轮回
+                },1000);
+            };
+            btn[1].onclick = function(){       //点击第二个buttom后函数
+                clearInterval(timer)           //清除定时器 ，需要接受一个定时器编号
+            }
+         })();
+
+         /*
+         但每次点击的时候都会开启新的定时器，如果点击多次就会多个定时器一起运行，
+         程序就乱了，且无法停止了。
+         需要定时器管理方式：
+            1.可以在每次开启新的定时器时，先把旧定时器关闭--clearInterval(timer);
+            2.开启之前，判断是否在执行，在看新的
+                if(timer){    //若读到return，后面的代码就不再执行
+                    return
+                }
+                ****代码****
+         */
+    </script>
+</body>
+</html>

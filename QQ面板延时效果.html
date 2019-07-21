@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .avatar{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+            
+        }
+        .info{
+            width: 200px;
+            height: 200px;
+            background-color:blue;
+            float: left;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class ="avatar"></div>
+    <div class ="info"></div>
+    <script>
+        (function(){
+            var avatar = document.querySelector(".avatar");
+            var info = document.querySelector(".info");
+            var timer = 0;
+            avatar.onmouseover = function(){
+                clearTimeout(timer);
+                info.style.display = "block";
+            };
+            avatar.onmouseout = function(){
+                timer = setTimeout(function(){
+                info.style.display = "none";
+                },300);
+            }
+            info.onmouseover = function(){
+                clearTimeout(timer);
+                info.style.display = "block";
+            };
+            info.onmouseout = function(){
+                timer = setTimeout(function(){
+                    info.style.display = "none";
+                },300);
+               
+            };
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="input1" type="text">+<input id="input2" type="text" ><button id="btn">=</button><span id="result"></span>
+
+
+    <script>
+        var input1 = document.getElementById('input1');
+        var input2 = document.getElementById('input2');
+        var result = document.getElementById('result');
+        var btn = document.getElementById('btn');
+
+        btn.onclick = function () {
+        result.innerHTML = Number(input1.value) + Number(input2.value);
+        }
+
+
+    </script>
+</body>
+</html>

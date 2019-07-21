@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrap{
+            width: 300px;
+            height: 300px;
+            margin: auto;
+        }
+        #text{
+            width: 300px;
+            height: 50px;
+        }
+        #btn{
+            float: right;
+            margin-top: 10px;
+        }
+        ul{
+            list-style: none;
+            margin-top: 20px;
+            padding: 0;
+            float: left;
+        }
+        li{
+            width: 300px;
+            height: 20px;
+        }
+    </style>
+<body>
+    <div id="wrap">
+        <textarea id="text" ></textarea>
+        <button id="btn" >提交</button>
+        <ul id="list">
+            <li></li>
+        </ul>
+    </div>
+    <script>
+        var text = document.getElementById('text');
+        var btn = document.getElementById('btn');
+        var list = document.getElementById('list');
+
+        btn.onclick = function () {             //点击提交按钮时
+            var txt = text.value;               //获取输入框内的文字存放在txt
+
+            //list.innerHTML=list.innerHTML +  '<li>' + txt + '</li>' ;     实现新留言出现在旧留言的后面
+            //list.innerHTML=  '<li>' + txt + '</li>'+list.innerHTML  ;     实现新留言出现在旧留言的前面
+
+            list.innerHTML+=  '<li>' + txt + '</li>' ;          //+=方法，在等于结果的计算时，加上本身
+        }
+    </script>
+</body>
+</html>
