@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 611px;
+            height: 640px;
+            margin: 30px auto;
+            background: url("./picture/commodity/bg.png");
+            background-size: contain;
+            position: relative;
+        }
+        .container {
+            width: 384px;
+            position: absolute;
+            left: 115px;
+            top: 205px;
+        }
+        ul li {
+            width: 380px;
+            height: 28px;
+            margin: 16px 0;
+            font-size: 12px;
+            list-style: none;
+        }
+        input[type="button"] {
+            width: 36px;
+            height: 28px;
+            margin: 0 2px;
+            border-radius: 3px;
+            box-shadow: 1px 1px 5px #fff inset;
+            background: #2f3130;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+        .n {
+            width: 36px;
+            height: 28px;
+            line-height: 28px;
+            border-radius: 3px;
+            text-align: center;
+            display: inline-block;
+            background: #ebebeb;
+        }
+        .list-left {
+            width: 124px;
+            height: 28px;
+            float: left;
+        }
+        .list-right {
+            width: 172px;
+            height: 28px;
+            line-height: 28px;
+            margin-left: 16px;
+            padding-left: 12px;
+            background: #171818;
+            color: #fff;
+            float: left;
+        }
+
+        p {
+            margin: 30px 35px;
+            color: #fff;
+            font-size: 12px;
+        }
+        p strong {
+            width: 36px;
+            height: 28px;
+            line-height: 28px;
+            border-radius: 3px;
+            margin: 0 5px;
+            text-align: center;
+            display: inline-block;
+            background: #ebebeb;
+            color: #000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <ul id="list">
+                <li>
+                    <div class="list-left">
+                        <input type="button" class="minus" value="-" />
+                        <span class="n">0</span>
+                        <input type="button" class="plus" value="+" />
+                    </div>
+                    <div class="list-right">
+                        <span>单价：</span>
+                        <em class="price">12.5</em>元
+                        <span>小计：</span>
+                        <em class="count">0</em>元
+                    </div>
+                </li>
+                <li>
+                    <div class="list-left">
+                        <input type="button" class="minus" value="-" />
+                        <span class="n">0</span>
+                        <input type="button" class="plus" value="+" />
+                    </div>
+                    <div class="list-right">
+                        <span>单价：</span>
+                        <em class="price">13.5</em>元
+                        <span>小计：</span>
+                        <em class="count">0</em>元
+                    </div>
+                </li>
+                <li>
+                    <div class="list-left">
+                        <input type="button" class="minus" value="-" />
+                        <span class="n">0</span>
+                        <input type="button" class="plus" value="+" />
+                    </div>
+                    <div class="list-right">
+                        <span>单价：</span>
+                        <em class="price">14.5</em>元
+                        <span>小计：</span>
+                        <em class="count">0</em>元
+                    </div>
+                </li>
+                <li>
+                    <div class="list-left">
+                        <input type="button" class="minus" value="-" />
+                        <span class="n">0</span>
+                        <input type="button" class="plus" value="+" />
+                    </div>
+                    <div class="list-right">
+                        <span>单价：</span>
+                        <em class="price">15.5</em>元
+                        <span>小计：</span>
+                        <em class="count">0</em>元
+                    </div>
+                </li>
+                <li>
+                    <div class="list-left">
+                        <input type="button" class="minus" value="-" />
+                        <span class="n">0</span>
+                        <input type="button" class="plus" value="+" />
+                    </div>
+                    <div class="list-right">
+                        <span>单价：</span>
+                        <em class="price">16.5</em>元
+                        <span>小计：</span>
+                        <em class="count">0</em>元
+                    </div>
+                </li>
+            </ul>
+            <p>商品合计共：<strong>0</strong>件，共花费了：<strong>0</strong>元</p>
+            <p>其中最贵的已选商品单价是：<strong>0</strong>元</p>
+        </div>
+    </div>
+        <script>
+            var price = document.querySelectorAll('.price');
+            var count = document.querySelectorAll('.count');
+            var plus = document.querySelectorAll('.plus');
+            var minus = document.querySelectorAll('.minus');
+            var ns = document.querySelectorAll('.n');
+            var len = ns.length;
+            var strong = document.querySelectorAll('strong');
+
+            for (var i = 0;i<len;i++){
+                todo (i);
+            }
+
+            function todo(index) {
+                minus[index].onclick =function () {
+                    changeNum(index,-1)
+                }
+                plus[index].onclick = function () {
+                   changeNum(index,+1)
+                }
+            }
+
+            function changeNum(index,change) {
+                var num = +ns[index].innerHTML + change;
+                switch (true){
+                    case num>10:
+                        num = 10;
+                        alert('不能再多了');
+                        return;
+                    case num<0:
+                        num = 0;
+                        alert('不能再少了');
+                        return;
+                }
+                ns[index].innerHTML = num ;
+                count[index].innerHTML = num * (price[index].innerHTML*10)/10;//先乘10再除10是为了解决当数据为小数时的精度问题
+                total();
+            }
+            function total() {
+                var subTotal = 0;
+                var numTotal = 0;
+                var max = 0;
+                for (var i =0;i<len;i++){
+                    subTotal += +ns[i].innerHTML;
+                    numTotal += +count[i].innerHTML;
+                    if (ns[i].innerHTML !=0){
+                        console.log(price[i].innerHTML);
+                        if (price[i].innerHTML>max){
+                            max = price[i].innerHTML;
+                        }
+                        //max = price[i].innerHTML> max ? price[i].innerHTML:max;
+                    }
+                }
+                strong[0].innerHTML = subTotal;
+                strong[1].innerHTML = numTotal;
+                strong[2].innerHTML = max;
+            }
+        </script>
+</body>
+</html>
