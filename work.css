@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    width: 1550px;
+}
+.box{
+    width: 1550px;
+}
+.content_piece{
+    width: 1550px;
+    height: 650px;
+    background: url("banner.jpg");
+    position: relative;
+}
+.con{
+    width: 1550px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+h3{
+    font-size: 46px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+.btn{
+    background: #1790ff;
+    border-radius: 5px;
+    width: 240px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin: 0 auto 30px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: white;
+}
+.content{
+    width: 896px;
+    height: 255px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px 28px;
+}
+.list_text{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+span{
+    font-size: 20px;
+}
+ul{
+    width: 875px;
+    height: 190px;
+    list-style-type: none;
+    padding-left: 10px;
+}
+li{
+    width: 875px;
+    height: 30px;
+    margin-bottom: 8px;
+}
+.grow{
+    width: 780px;
+    height: 20px;
+    font-size: 14px;
+    margin: 0 20px 0 0 ;
+    float: left;
+}
+.function_btn{
+
+    text-decoration: none;
+    color: #1790ff;
+    margin-left: 5px;
+}
+.function_btn:hover{
+    color: #1790ff;
+}
+.tip{
+    font-size: 14px;
+    color: #1790ff;
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+}
+.footer{
+    width: 1550px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #272727;
+}
+.copyright{
+    color: white;
+    margin: 0;
+    text-align: center;
+    line-height: 106px;
+}
