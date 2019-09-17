@@ -1,0 +1,137 @@
+.all{
+    height: 500px
+}
+.originator_ID{
+    width: 1200px;
+    height: 90px ;
+    margin-bottom: 15px;
+}
+.originator_ID_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+    padding: 0 15px 0 15px;
+}
+.originator_ID_input{
+    width: 440px;
+    height: 90px;
+    float: left;
+    margin-left: 20px;
+}
+.ID_btn{
+    color: white;
+    width: 70px;
+    height: 35px;
+    background-color:#6dbfff;
+    padding: 5px 15px;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+}
+.business_license{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+    float: left;
+}
+.business_license_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+    padding: 0 15px 0 15px;
+}
+.business_license_input{
+    width: 440px;
+    height: 90px;
+    float: left;
+    margin-left: 20px;
+}
+.intellectual_property{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+    float: left;
+}
+.intellectual_property_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+    padding: 0 15px 0 15px;
+}
+.intellectual_property_input{
+    width: 440px;
+    height: 90px;
+    float: left;
+    margin-left: 20px;
+}
+.social_security{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+    float: left;
+}
+.social_security_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+    padding: 0 15px 0 15px;
+}
+.social_security_input{
+    width: 440px;
+    height: 90px;
+    float: left;
+    margin-left: 20px;
+}
+.other_details{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+    float: left;
+}
+.other_details_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+    padding: 0 15px 0 15px;
+}
+.other_details_input{
+    width: 440px;
+    height: 90px;
+    float: left;
+    margin-left: 20px;
+}
+.project_plan{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+    float: left;
+}
+.project_plan_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+    padding: 0 15px 0 15px;
+}
+.project_plan_input{
+    width: 440px;
+    height: 90px;
+    float: left;
+    margin-left: 20px;
+}

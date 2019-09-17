@@ -1,0 +1,154 @@
+.add{
+    width: 1200px;
+    height: 100%;
+    margin: auto ;
+    margin-bottom: 50px;
+}
+.all{
+    width: 1200px;
+    margin: auto ;
+    border: #b0b0b0 solid 0.5px;
+}
+
+.one{
+    width: 1200px;
+    height: 100%;
+    margin: 20px 0 0 0 ;
+}
+.Basic_situation{
+     width: 1200px;
+     height: 670px;
+     margin: auto ;
+ }
+.project_name{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.name_text {
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
+.input{
+    width: 550px;
+    height: 30px;
+    float: left;
+    padding-left: 20px;
+}
+.name_input {
+    width: 550px;
+    height: 30px;
+    border: #dcdcdc 1px solid;
+    border-radius:5px;
+}
+.Project_location {
+    width: 1148px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.location_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    float: left;
+    font-weight: 900;
+}
+.menu{
+    width: 553px;
+    height: 35px;
+    margin-left:20px ;
+    border-radius:5px;
+    border: #dcdcdc 1px solid;
+}
+.Project_areas{
+    width: 1200px;
+    height: 400px;
+    margin-bottom: 15px;
+}
+.areas_text{
+    float: left;
+    width: 300px;
+    height: 30px;
+    text-align: right ;
+    font-weight: 900;
+}
+.areas_check{
+    float: left;
+    height: 400px;
+    padding: 0 40px;
+}
+.checkbox {
+    width: 120px;
+    height: 20px;
+    padding: 0 0 0 20px;
+}
+.form-controls{
+    width: 550px;
+    height: 30px;
+    border: #dcdcdc 1px solid;
+    border-radius:5px;
+}
+.Project_group{
+    width: 1200px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+.group_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
+.group_select{
+    float:left;
+    width: 550px;
+}
+.Project_record{
+    width: 1200px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+.record_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
+.save_print {
+    width: 1200px;
+    height: 35px;
+    text-align: center;
+}
+.center{
+    width: 120px;
+    height: 35px;
+    margin: auto ;
+}
+.save{
+    background-color: #428bca;
+    color: white;
+    width: 55px;
+    height: 35px;
+    padding: 6px 12px;
+    border: 1px solid ;
+    margin: auto ;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    float: left;
+}
+.print{
+    width: 60px;
+    height: 16px;
+    float: left;
+    line-height: 35px;
+}

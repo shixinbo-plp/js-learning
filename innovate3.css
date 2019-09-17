@@ -1,0 +1,100 @@
+.one{
+    width: 1200px;
+    height: 410px;
+    margin: 30px 0 0 0 ;
+}
+.all{
+    width: 1200px;
+    height:410px ;
+    margin: auto ;
+    border: #b0b0b0 solid 0.5px;
+}
+.Basic_situation{
+    width: 1200px;
+    height: 670px;
+    margin: auto ;
+}
+.employment_figure{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.employment_figure_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
+.input{
+    width: 550px;
+    height: 30px;
+    float: left;
+    margin-left: 20px;
+}
+.name_input {
+    width: 550px;
+    height: 30px;
+    border: #dcdcdc 1px solid;
+    border-radius:5px;
+}
+.Number_registered_residents{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.Number_registered_residents_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
+.Number_college_above{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.Number_college_above_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
+.Number_studying_abroad{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.Number_studying_abroad_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
+.kernel_introduce{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.kernel_introduce_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
+.input_2{
+    width: 550px;
+    height: 50px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}

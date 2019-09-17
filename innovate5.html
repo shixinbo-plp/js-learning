@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innovate5</title>
+    <link rel="stylesheet" type="text/css" href="innovate.css " >
+    <link rel="stylesheet" type="text/css" href="innovate5.css " >
+    <link rel="stylesheet" type="text/css" href="bootstrap.css " >
+</head>
+<body>
+<div class="add">
+    <div class="all">
+        <ul class="nav nav-tabs">
+            <li role="presentation"  ><a class="Steps" href="innovate.html">基本信息</a></li>
+            <li role="presentation"  ><a class="Steps" href="innovate2.html">企业(团队)信息</a></li>
+            <li role="presentation" ><a class="Steps" href="innovate3.html">吸纳就业情况</a></li>
+            <li role="presentation" ><a class="Steps" href="innovate4.html">第一创始人基本情况</a></li>
+            <li role="presentation"  class="active" ><a class="Steps" href="innovate5.html">项目介绍</a></li>
+            <li role="presentation" ><a class="Steps" href="innovate6.html">上传材料</a></li>
+            <li role="presentation" ><a class="Steps" href="innovate7.html">打印材料</a></li>
+        </ul>
+        <div class="panel-body">
+            <div class="form-horizontal" >
+                <div class="project_brief">
+                    <div class="project_introduce">*项目简介</div>
+                    <div class="project_introduce_input"><textarea class="ta1" style="width:750px;height:50px;border-radius: 4px; " ></textarea></div>
+                </div>
+                <div class="patent_nape">
+                    <div class="patent_number">*获得专利等知识产权数量</div>
+                    <textarea class="ta1" style="width:750px;height:30px;border-radius: 4px; float: left" ></textarea>
+                </div>
+                <div class="patent_nape2">
+                    <div class="patent_particulars">*获得专利等知识产权明细</div>
+                    <div class="patent_particulars_table">
+                        <table class="particulars_table">
+                            <thead>
+                            <tr>
+                                <td>知识产权类型</td>
+                                <td>知识产权名称</td>
+                                <td>知识产权编号</td>
+                                <td>其他</td>
+                                <td><button id="btn">加</button></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" name="property[type][]"></td>
+                                    <td><input type="text" name="property[type][]"></td>
+                                    <td><input type="text" name="property[type][]"></td>
+                                    <td><input type="text" name="property[type][]"></td>
+                                    <td><button id="btn2" >删</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="direct">
+                    <div class="direct_name">*直接带动就业岗位的数量</div>
+                    <div class="direct_text"><textarea class="ta1" style="width:750px;height:30px;border-radius: 4px; float: left" ></textarea></div>
+                </div>
+                <div class="indirect">
+                    <div class="indirect_name">*间接带动就业岗位的数量</div>
+                    <div class="indirect_text"><textarea class="ta1" style="width:750px;height:30px;border-radius: 4px; float: left" ></textarea></div>
+                </div>
+                <div class="predict">
+                    <div class="predict_name">*预计今年将创造就业岗位的数量</div>
+                    <div class="predict_text"><textarea class="ta1" style="width:750px;height:30px;border-radius: 4px; float: left" ></textarea></div>
+                </div>
+
+
+                <div class="patent_nape2">
+                    <div class="patent_particulars">*市场及发展前景</div>
+                    <div class="patent_particulars_table">
+                        <table class="particulars_table">
+                            <thead>
+                            <tr>
+                                <td>时间</td>
+                                <td>科目</td>
+                                <td>营业收入</td>
+                                <td>营业成本</td>
+                                <td>营业税金及附加</td>
+                                <td>研发净投入</td>
+                                <td>净资产</td>
+                                <td>净利润</td>
+                                <td><button class="btn">加</button></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><input type="text" name="property[type][]"></td>
+                                <td><input type="text" name="property[type][]"></td>
+                                <td><input type="text" name="property[type][]"></td>
+                                <td><input type="text" name="property[type][]"></td>
+                                <td><input type="text" name="property[type][]"></td>
+                                <td><input type="text" name="property[type][]"></td>
+                                <td><input type="text" name="property[type][]"></td>
+                                <td><input type="text" name="property[type][]"></td>
+                                <td><button class="btn2" >删</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="financing_number">
+                    <div class="financing_number_name">*已获得融资次数</div>
+                    <div class="financing_number_text"><textarea class="ta1" style="width:750px;height:30px;border-radius: 4px; float: left" ></textarea></div>
+                </div>
+                <div class="financing_sum">
+                    <div class="financing_sum_name">*已获得融资次数</div>
+                    <div class="financing_sum_text"><textarea class="ta1" style="width:750px;height:30px;border-radius: 4px; float: left" ></textarea></div>
+                </div>
+                <div class="project_brief">
+                    <div class="project_introduce">其他需要说明的情况</div>
+                    <div class="project_introduce_input"><textarea class="ta1" style="width:750px;height:50px;border-radius: 4px; " ></textarea></div>
+                </div>
+                <div class="save_print">
+                    <div class="center">
+                        <div class="save"><a href="#" style="color: white ">保存</a></div>
+                        <div class="print"><a href="#">打印预览</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

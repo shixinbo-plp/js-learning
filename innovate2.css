@@ -1,0 +1,67 @@
+.one{
+    width: 1200px;
+    height: 290px;
+    margin: 30px 0 0 0 ;
+}
+.all{
+    width: 1200px;
+    height:290px ;
+    margin: auto ;
+    border: #b0b0b0 solid 0.5px;
+}
+.Basic_situation{
+    width: 1200px;
+    height: 670px;
+    margin: auto ;
+}
+.team_name{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.name_text {
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
+.input{
+    width: 550px;
+    height: 30px;
+    float: left;
+    margin-left: 20px;
+}
+.name_input {
+    width: 550px;
+    height: 30px;
+    border: #dcdcdc 1px solid;
+    border-radius:5px;
+}
+.group_size{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.group_size_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
+.first_founder_name{
+    width: 1200px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+.first_founder_name_text{
+    float: left;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right ;
+    font-weight: 900;
+}
