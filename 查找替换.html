@@ -43,7 +43,7 @@
         inputs[2].onclick = function () {
             var str = inputs[0].value;                  //查找的内容
             var conArr = contentTXT.split(str);         //根据需要查找的内容进行分割
-            content.innerHTML = conArr.join('<strong>'+str+'</strong>');//再根据查找的内容进行拼接；
+            content.innerHTML = conArr.join('<mark>'+str+'</mark>');//再根据查找的内容进行拼接；
         };
         //替换
         inputs[3].onclick = function () {
